@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+body {
+  /* position: relative; */
+}
+[class*="__container"] {
+  /*любая строка, которая содержит -container будет применять данные стили */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /*отступы безопасности */
+}
+/*------HEADER-----*/
+.header {
+  margin-top: 10px;
+  width: 100%;
+ 
+  background: url(../img/header/main_bg.png) no-repeat center/cover;
+}
+.header__container {
+    
+}
+.header-logo {
+}
+.logo-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  margin-left: 4px;
+}
+.logo-title {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 14px;
+  margin-right: 20px;
+}
+.header-info {
+    position: relative;
+  margin-top: 52px;
+  margin-bottom: 72px;
+}
+.header-subtitle {
+  color: #f9bf3b;
+  /* font-family: Roboto; */
+  font-size: 41px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 22px;
+}
+.header-title {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 80px; /* 100% */
+  text-transform: uppercase;
+  text-align: center;
+  /* padding-top: 6px;
+  padding-bottom: 5px; */
+  padding: 6px 10px 5px;
+  margin-right: 27px;
+}
+.header-title::after {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 2px;
+  top: calc(30% + 2px);
+ right: 13px;
+  background: #fff;
+}
+.header-title::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 2px;
+  top: calc(30% + 2px);
+  left: 6px;
+  background: #fff;
+  margin-left: 10px;
+}
+.header-text {
+  color: #fff;
+  text-align: justify;
+  font-size: 21px;
+  font-weight: 300;
+  margin: 16px 14px;
+  line-height: 28px; /* 133.333% */
+}
+.header-text span {
+  color: #f9bf3b;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.header-button {
+
+display: flex;
+justify-content: center;
+margin: -3px;
+margin-bottom: 70px;
+}
+.header-button button{
+    width: 313px;
+height: 72px;
+    font-family: Roboto Condensed;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.40);
+color: #FFF;
+text-align: center;
+text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+font-size: 21px;
+font-weight: 400;
+line-height: 24px; /* 114.286% */
+text-transform: uppercase;
+}
+.header-go{
+    padding-bottom: 87px;
+}
+.go-title{
+    text-align: center;
+    color: #FFF;
+font-size: 15px;
+font-weight: 100;
+line-height: 24px; /* 160% */
+text-transform: uppercase;
+padding-bottom: 2px;
+margin-right: 28px;
+}
+.go-but{
+   display: block;
+   margin: 0 auto;
+}
