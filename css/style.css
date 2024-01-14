@@ -22,6 +22,25 @@ body {
   margin: 0 auto;
   padding: 0 15px; /*отступы безопасности */
 }
+[class*="__title"] {
+  color: #252525;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px; /* 100% */
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 18px;
+}
+[class*="__title"]::after {
+  position: absolute;
+  content: "";
+  right: calc(50% - 217px / 2);
+  width: 217px;
+  height: 4px;
+  background: #f9bf3b;
+  bottom: 0;
+}
 /*------HEADER-----*/
 .header {
   margin-top: 10px;
@@ -152,25 +171,6 @@ body {
   padding-top: 59px;
 }
 
-.plan__title {
-  color: #252525;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px; /* 100% */
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 18px;
-}
-.plan__title::after {
-  position: absolute;
-  content: "";
-  right: calc(50% - 217px / 2);
-  width: 217px;
-  height: 4px;
-  background: #f9bf3b;
-  bottom: 0;
-}
 .plan-subtitle {
   padding-top: 21px;
   color: #4a4a4a;
@@ -195,4 +195,43 @@ body {
   font-size: 15px;
   font-weight: 300;
   line-height: 21px; /* 140% */
+}
+/*--------INFO-------*/
+.info {
+  position: relative;
+}
+.info-bg {
+  position: absolute;
+  top: 27px;
+  left: -212px;
+}
+.info__container {
+  position: relative;
+}
+.info-content {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  max-width: 750px;
+}
+.info-title {
+  padding-top: 87px;
+  padding-bottom: 17px;
+  color: #299cbd;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px; /* 100% */
+  text-transform: uppercase;
+}
+.info-text {
+  color: #4a4a4a;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px; /* 158.824% */
+}
+.info-text p {
+  padding-bottom: 10px;
+}
+.info-text span {
+  font-weight: 700;
 }
